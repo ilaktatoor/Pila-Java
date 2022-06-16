@@ -45,32 +45,6 @@ public class Pila<T>{
         }
     }
 
-    public T search(Object find){
-        if (isEmpty()){
-            return null;
-        }else {
-            Nodo<T> aux = top;
-            while(aux!=find){
-                aux=aux.getSiguente();
-            }
-            return aux.getValor();
-        }
-    }
-
-
-    public String oneNode(){
-        if (isEmpty()){
-            return "la pila esta vacia";
-        }else{
-            String resultado="";
-            Nodo<T> aux = top;
-            while (aux!=null){
-                resultado = aux.toString();
-                aux= aux.getSiguente();
-            }
-            return resultado;
-        }
-    }
     public String toString(){
         if (isEmpty()){
             return "la pila esta vacia";
