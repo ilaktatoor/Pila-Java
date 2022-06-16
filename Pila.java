@@ -17,8 +17,6 @@ public class Pila<T>{
 
     public int size(){  return this.tamanio;    }
 
-    public Nodo<T> getTop() {   return top;    }
-
     public T top(){
         if (isEmpty()){
             return null;
